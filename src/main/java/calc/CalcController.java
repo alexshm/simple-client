@@ -22,4 +22,9 @@ public class CalcController {
             throw new IllegalArgumentException("one of the argument is incorrect");
         }
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public int sumXandY() throws Exception {
+        return 1;
+    }
 }
